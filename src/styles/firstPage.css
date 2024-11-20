@@ -1,0 +1,157 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.landing-page {
+    position: relative;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 2rem;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.message-section {
+    max-width: 50%;
+    border-radius: 8px;
+    margin-top: 130px;
+    height: 60vh;
+
+}
+
+.message-section h1 {
+    font-size: 4rem; /* Responsive font size */
+    max-width: 100%; /* Allow full width for smaller screens */
+    margin-bottom: 1rem;
+}
+
+.message-section p {
+    font-size: 1.2rem; /* Responsive font size */
+    max-width: 100%; /* Allow full width for smaller screens */
+    margin-bottom: 1.0rem;
+}
+
+.cta-button {
+    margin-top: 22px;
+    background-color: #FFFFFF; /* Button background color */
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 12px; /* Rounded button */
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Cards Section */
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+    width: auto; /* or max-width: 100%; to ensure it fits within the viewport */
+    padding: 0.7rem;
+}
+
+.cards {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Background blur */
+    padding: 1.5rem;
+    flex: 1;
+    margin: 0 0.5rem;
+    border-radius: 6px; /* Rounded border */
+    color: #FFFFFF; /* Card text color */
+    transition: transform 0.3s ease, background 0.3s ease;
+    background: linear-gradient(25%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05)); /* Linear fill */
+}
+
+.cards:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.2);
+}
+.cards h3{
+    text-align: left;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .message-section {
+        max-width: 60%;
+    }
+    .message-section h1 {
+        font-size: 3.5rem; /* Adjust font size for smaller screens */
+    }
+    .message-section p {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .message-section {
+        max-width: 100%;
+        margin: auto;
+        margin-top: 70px;
+    }
+
+    .landing-page {
+        height: auto;
+    }
+
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        margin: 0.5rem 0;
+        width: 80%;
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .message-section h1 {
+        font-size: 3.0rem; /* Further adjustment */
+    }
+
+    .message-section p {
+        font-size: 1rem; /* Further adjustment */
+    }
+    .cards {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .message-section h1 {
+        font-size: 3.5rem; /* Further adjustment for very small screens */
+    }
+
+    .message-section p {
+        font-size: 1.0rem; /* Further adjustment for very small screens */
+    }
+    .cards {
+        width: 100%;
+    }
+}
+.waiting {
+    display: inline-block;
+    animation: blink 1s step-start infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  

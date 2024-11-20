@@ -1,0 +1,38 @@
+.join-us-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    height: 90vh;
+  }
+  
+  .join-us-column {
+    padding: 2rem;
+    margin: 1rem;
+  }
+  
+  .join-us-button {
+    display: flex;
+    justify-content: center ;
+    background-color: #800080; /* Adjust the button color */
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .join-us-button:hover {
+    background-color: #660066; /* Darken button on hover */
+  }
+  
+  /* Large screens */
+  @media (min-width: 1024px) {
+    .join-us-container {
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: left;
+    }
+  }
+  

@@ -1,0 +1,16 @@
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .blink {
+    animation: blink 1.5s infinite; /* Adjust the duration to control the blink speed */
+  }
+  .bg-vid {
+    background-image: url('./../images/bgimage.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  

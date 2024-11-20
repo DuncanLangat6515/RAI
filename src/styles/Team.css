@@ -1,0 +1,112 @@
+.custom-team-section {
+  --bs-body-color: rgb(50, 62, 80);
+  --bs-body-bg: #ffffff;
+  --theme-color: #800080;
+  --theme-color-rgb: 13, 110, 253;
+  --card-bg: #800080;
+  --content-color: #ffffff;
+  --box-shadow: 0 7px 65px 0 rgba(0, 0, 0, 0.12);
+  background-color: var(--bs-body-bg);
+  margin-bottom: 30px; /* Added margin bottom */
+}
+
+.custom-team-heading {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--bs-body-color);
+}
+
+.custom-team-sub-heading {
+  font-size: 17px;
+  color: var(--bs-body-color);
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.custom-team-content {
+  position: absolute;
+  background-color: var(--content-color);
+  bottom: -50px;
+  padding: 20px;
+  width: 80%;
+  left: 10%;
+  box-shadow: var(--box-shadow);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.custom-team-content,
+.custom-team-title,
+.custom-team-sub-title,
+.custom-team-social-icon-area {
+  transition: all 0.4s ease-out;
+}
+
+.custom-team-title {
+  color: var(--bs-body-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+.custom-team-social-icon-area {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: auto;
+  opacity: 0;
+  transform: translateX(0) translateY(30px) translateZ(0) rotate(0deg) scale(1);
+}
+
+.custom-team-item-inner:hover .custom-team-content {
+  padding: 30px 20px 84px;
+  background-color: var(--theme-color);
+}
+
+.custom-team-item-inner:hover .custom-team-title {
+  color: #fff;
+}
+
+.custom-team-item-inner:hover .custom-team-sub-title {
+  color: #fff;
+  opacity: 0.85;
+}
+
+.custom-team-item-inner:hover .custom-team-social-icon li a {
+  color: #fff;
+}
+
+.custom-team-item-inner:hover .custom-team-social-icon-area {
+  opacity: 1;
+  transform: translateX(0) translateY(0) translateZ(0) rotate(0deg) scale(1);
+}
+
+.custom-team-social-icon li {
+  list-style: none;
+  float: left;
+  margin-bottom: 0px;
+}
+
+.custom-team-social-icon li a {
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  text-align: center;
+  margin-top: 8px;
+  margin-right: 10px;
+  color: var(--content-color);
+  opacity: 0.9;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.custom-team-social-icon li a:hover {
+  color: var(--theme-color) !important;
+}

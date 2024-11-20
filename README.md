@@ -1,4 +1,4 @@
-# RAI (Responsible AI) Project
+# RAI (Responsible AI) Website
 
 This project is designed to build a website focused on Responsible AI.
 
@@ -39,27 +39,34 @@ To learn more about React, visit the official [React documentation](https://reac
 ```bash
 src/
 ├───components/
-│   ├───Admin/         # Admin-related components-------For blog and events updates
+│   ├───Admin/         # Admin-related components ------- For blog and events updates
 │   └───Client/        # Client-side components
-│       ├───About.js       # Gideon - About page
-│       ├───Blog.js        # To be decided later
-│       ├───Contact.js     # Gideon - Contact page
-│       ├───Events.js      # Shared between Gideon and Felix
-│       ├───Footer.js       # Felix - Footer section for landing page
-│       ├───LandingPage/
-│       │   ├───FirstPage.js      # Isaac - First page section
-│       │   ├───SecondPage.js     # Isaac - Second page section
-│       │   ├───Courses.js         # Gideon - Courses section
-│       │   ├───OurMission.js       # Gideon - Our Mission section
-│       │   ├───Testimonials.js     # Felix - Testimonials section
-│       │   ├───OurTeam.js         # Felix - Our Team section
-│       ├───Navbar.js      # Isaac - Navbar component
-│       ├───Resources.js   # Isaac - Resources page
-│       ├───Services.js    # Felix - Services page
-│       ├───Team.js        # Shared between Felix and Isaac
+│       ├───About.js           # Gideon - About page
+│       ├───Blog.js            # Duncan - Blog page
+│       ├───Contact.js         # Gideon - Contact page
+│       ├───Events.js          # Duncan - Events page
+│       ├───Footer.js          # Duncan - Footer section for landing page
+│       ├───Gallery.js         # Gitonga - Gallery section
+│       ├───OurTeam.js         # Eyinda - Team page (for all team members including ambassadors)
+│       ├───LandingPage/       # Landing page sections
+│       │   ├───Courses.js         # Isaac - Courses section
+│       │   ├───FirstPage.js       # Isaac - First page section
+│       │   ├───JoinUs.js          # Duncan - Join Us section
+│       │   ├───OurGallery.js      # Isaac - Gallery Page
+│       │   ├───OurMission.js      # Gideon - Our Mission section
+│       │   ├───OurPartners.js     # Gitonga - Our Partners section
+│       │   ├───SecondPage.js      # Isaac - Second page section
+│       │   ├───Team.js            # Gideon - Core-Team section
+│       │   ├───Testimonials.js    # Felix - Testimonials section
+│       ├───Navbar.js          # Isaac - Navbar component
+│       ├───Resources.js       # Isaac - Resources page
+│       ├───WhoWeServe.js      # Unassigned (formerly Services)
+│       ├───CoursesPage.js     # Isaac - Courses Page
+│       ├───CourseCard.js      # Isaac - Part of Courses Page
+│       ├───RelatedCourses.js  # Component for related courses
+│       ├───VideoModal.jsx     # Component for video modals
 ├───images/            # Folder for image assets
 └───styles/            # Global and component-specific styles
-
 
 ```
 ## Color Codes

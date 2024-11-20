@@ -22,7 +22,7 @@
     --background-color: #ffffff; /* Background color for the entire website, including individual sections */
     --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
     --heading-color: #32353a; /* Color for headings, subheadings and title throughout the website */
-    --accent-color: #227AFF;; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+    --accent-color: #800080;; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
     --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
     --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
   }
@@ -340,6 +340,7 @@
       justify-content: space-between;
       white-space: nowrap;
       transition: 0.3s;
+      list-style: none;
     }
   
     .navmenu a i,
@@ -473,3 +474,68 @@
       display: block;
     }
   }
+.mobile-nav-toggle {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  color: #000;
+}
+
+/* Ensure the icon is visible for mobile view */
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+}
+
+.mobile-nav-active .mobile-nav-toggle {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  color: #fff;
+  z-index: 9998;
+}
+
+/* Style for active dropdown */
+.dropdown-active {
+  display: block;
+}
+
+
+/* When active, show the dropdown */
+.mobile-nav-active .dropdown-active {
+  display: block;
+}
+/* Prevent underline on logo and Get Started button */
+.logo a, .btn-getstarted {
+  text-decoration: none; /* Ensures no underline */
+}
+
+/* Optional: Add specific styles for the logo */
+.logo img {
+  max-height: 50px; /* You can adjust the size of the logo */
+  display: block; /* Ensures proper alignment */
+}
+
+/* Additional media queries for responsiveness, if needed */
+@media (max-width: 768px) {
+  /* Specific styles for small screens */
+  .btn-getstarted {
+    display: none;
+}
+}
+/* Remove underline for nav links on mobile */
+@media (max-width: 1199px) {
+  .navmenu a {
+    text-decoration: none !important; /* Ensure no underline on mobile */
+  }
+
+  .navmenu a:hover {
+    text-decoration: none !important; /* Ensure no underline on hover */
+  }
+
+  .navmenu .active,
+  .navmenu .active:hover {
+    text-decoration: none !important; /* Ensure no underline for active links */
+  }
+}
